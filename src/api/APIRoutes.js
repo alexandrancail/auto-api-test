@@ -16,7 +16,9 @@ apiRouter.get('/generate/:prompt', (req, res) => {
                 url: url,
                 data: {
                   prompt: prompt,
+                  negative_prompt: '',
                   steps: 20,
+                  seed: 0,
                   cfg_scale: 7.5
                 }
               });
